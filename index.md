@@ -1,3 +1,7 @@
+---
+layout: home
+title: Home
+---
 
 # Elisa L. Garulli
 
