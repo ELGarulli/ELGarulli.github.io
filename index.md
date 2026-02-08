@@ -48,7 +48,7 @@ My little imperfect but useful code child. Born out of necessity, it now helps m
 
 **2025**
 
-- **Paper Title Three*py_neuromodulation: Signal processing and decoding for neural electrophysiological recordings*  
+- **py_neuromodulation: Signal processing and decoding for neural electrophysiological recordings**  
   Merk T. [...] Garulli E. [...] Neumann WJ. *JOSS*, 2025.  
   [Paper link](https://joss.theoj.org/papers/10.21105/joss.08258)
 
