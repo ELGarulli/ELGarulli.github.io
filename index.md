@@ -24,7 +24,7 @@ My research focuses on neural analysis, designing closed-loop stimulation algori
 
 ### Neural Fingerprints of Akinetic States
 Bottom-up extraction of salient features that characterise akinetic states in a Parkinson's model.
-[Paper](https://www.nature.com/articles/s41531-026-01280-4)
+[Paper](https://www.nature.com/articles/s41531-026-01280-4) | 
 [Repository](https://github.com/ELGarulli/akinesia_fingerprint_article)
 
 ### Phase-locked EES
@@ -33,8 +33,8 @@ Exploring the effects of spinal cord stimulation phase-locked to ongoing cortica
 
 ### neurokin
 My little imperfect but useful code child. Born out of necessity, it now helps me and my colleagues to streamline many of our routine neurobehavioural analyses.
-[Repository](https://github.com/ELGarulli/neurokin)
-[PyPi](https://pypi.org/project/neurokin/)
+[Repository](https://github.com/ELGarulli/neurokin) |
+[PyPi](https://pypi.org/project/neurokin/) |
 [Docs](https://neurokin.readthedocs.io/en/latest/)
 
 
@@ -44,7 +44,7 @@ My little imperfect but useful code child. Born out of necessity, it now helps m
 
 - **Deep neurobehavioral phenotyping uncovers neural fingerprints of locomotor deficits in Parkinson’s disease**  
   Garulli et al. *NPJ PD*, 2026.  
-  [Paper link](https://www.nature.com/articles/s41531-026-01280-4#data-availability) | [Code](https://github.com/ELGarulli/akinesia_fingerprint_article)) | [Data](https://zenodo.org/records/15163493)
+  [Paper link](https://www.nature.com/articles/s41531-026-01280-4#data-availability) | [Code](https://github.com/ELGarulli/akinesia_fingerprint_article) | [Data](https://zenodo.org/records/15163493)
 
 **2025**
 
