@@ -1,12 +1,7 @@
 
----
-layout: default
-title: Home
----
-
 # Elisa L. Garulli
 
-<img src="assets/img/me.png" alt="Profile picture" style="max-width:180px; border-radius:8px;">
+<img src="assets/img/me.png" alt="Profile picture" style="max-width:90px; border-radius:8px;">
 
 ## About
 
