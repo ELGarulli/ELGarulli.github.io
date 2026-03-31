@@ -30,6 +30,14 @@ h1{
   font-weight: semi-bold;
 }
 
+.room{perspective: 1200px;}
+.wall-left {
+  transform: rotateY(35deg);
+}
+
+.wall-right {
+  transform: rotateY(-35deg);
+}
 
 .card {
   display: flex;

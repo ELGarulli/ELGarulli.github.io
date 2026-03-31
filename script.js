@@ -1,11 +1,16 @@
-const cards = document.querySelectorAll(".card");
+const panel = document.getElementById("panel-content");
+const buttons = document.querySelectorAll(".nav-item");
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
-    }
+async function loadSection(name) {
+  const response = await fetch(`sections/${name}.html`);
+  const html = await response.text();
+  panel.innerHTML = html;
+}
+
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    loadSection(button.dataset.section);
   });
 });
 
-cards.forEach(card => observer.observe(card));
+loadSection("about");
