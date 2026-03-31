@@ -30,9 +30,8 @@ h1{
   font-weight: semi-bold;
 }
 
-
 .card {
-  display: flex;
+  display: grid;
   align-items: center;
   gap: 30px;
   background-color: var(--bg);
