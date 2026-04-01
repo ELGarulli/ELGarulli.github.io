@@ -5,14 +5,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Elisa L. Garulli</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style/variables.css">
+  <link rel="stylesheet" href="style/base.css">
+  <link rel="stylesheet" href="style/layout.css">
+  <link rel="stylesheet" href="style/room.css">
+  <link rel="stylesheet" href="style/components.css">
 </head>
 
-<body>
+<body class="theme-cool">
   <div class="room">
     <nav class="wall wall-left">
-      <button class="nav-item" data-section="about">About</button>
-      <button class="nav-item" data-section="contact">Contact</button>
+      <div class="wall-lines">
+      <div class="vline v1"></div>
+      <div class="vline v2"></div>
+      <div class="diag d1"></div>
+      <div class="diag d2"></div>
+      </div>
+
+      <div class="wall-grid">
+        <button class="nav-item nav-about" data-section="about"><img src="assets/img/about.png" alt="About Icon" class="about-image"></button>
+        <button class="nav-item nav-contacts" data-section="contacts"><img src="assets/img/contacts.png" alt="Contacts Icon" class="contacts-image"></button>
+      </div>
     </nav>
 
     <main class="wall wall-center">
@@ -20,8 +33,34 @@
     </main>
 
     <nav class="wall wall-right">
-      <button class="nav-item" data-section="projects">Projects</button>
-      <button class="nav-item" data-section="publications">Publications</button>
+      <div class="wall-lines">
+        <div class="vline v1"></div>
+        <div class="vline v2"></div>
+        <div class="diag d1"></div>
+        <div class="diag d2"></div>
+      </div>
+      <div class="wall-grid">
+      <button class="nav-item nav-projects" data-section="projects">Projects</button>
+      <button class="nav-item nav-publications" data-section="publications">Publications</button>
+      <div class="theme-selector" id="theme-selector">
+        <div class="arc"></div>
+        <div class="indicator" id="indicator"></div>
+
+        <label class="theme-option option-left">
+          <input type="radio" name="theme" value="theme-cool" checked />
+          <span></span>
+        </label>
+
+        <label class="theme-option option-top">
+          <input type="radio" name="theme" value="theme-boring" />
+          <span></span>
+        </label>
+
+        <label class="theme-option option-right">
+          <input type="radio" name="theme" value="theme-party" />
+          <span></span>
+        </label>
+      </div>
     </nav>
   </div>
 

@@ -1,0 +1,34 @@
+
+body.theme-cool{
+  --bg: #2D353D;
+  --box: #000000;
+  --text: #000000;
+  --accent: #000000;
+  --lighter-room: #C3F763;
+  --room: #0AF43F;
+  --lines: #000000;
+  --accent-soft: #000000;
+}
+
+body.theme-boring{
+  --bg: #2D353D;
+  --box: #848c8e;
+  --text: #f1f2ee;
+  --accent: #dcf763;
+  --lines: #C3F763;
+  --lighter-room: #C3F763;
+  --room: #848c8e;
+  --accent-soft: #CFDFBE;
+}
+
+
+body.theme-party{
+  --bg: #000000;
+  --box: #000000;
+  --text: #000000;
+  --accent: #000000;
+  --lines: #0AF43F;
+  --lighter-room: #C3F763;
+  --room: #000000;
+  --accent-soft: #000000;
+}

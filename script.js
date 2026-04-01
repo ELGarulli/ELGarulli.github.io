@@ -14,3 +14,23 @@ buttons.forEach(button => {
 });
 
 loadSection("about");
+
+const radios = document.querySelectorAll('input[name="theme"]');
+const indicator = document.getElementById("indicator");
+
+const angleByTheme = {
+  "theme-cool": -60,
+  "theme-boring": 0,
+  "theme-party": 60,
+};
+
+function setTheme(theme) {
+  document.body.className = theme;
+  indicator.style.transform = `translateX(-50%) rotate(${angleByTheme[theme]}deg)`;
+}
+
+radios.forEach(radio => {
+  radio.addEventListener("change", () => setTheme(radio.value));
+});
+
+setTheme(document.querySelector('input[name="theme"]:checked').value);

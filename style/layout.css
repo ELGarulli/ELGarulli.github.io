@@ -1,0 +1,57 @@
+.room{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  perspective: 3600px;
+  overflow: hidden;
+}
+
+.wall{
+  position: absolute;
+  top: 10vh;
+  height: 72vh;
+  border-radius: 0px;
+  box-sizing: border-box;
+
+}
+
+.wall-center {
+  left: 25%;
+  width: 50%;
+  background: color-mix(in srgb, var(--room) 85%, black);
+  z-index: 1;
+}
+
+.wall-left,
+.wall-right {
+  width: 25%;
+  background: var(--room);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0rem;
+  padding: 0rem;
+}
+
+.wall-left {
+  left: 0%;
+  transform-origin: right center;
+  transform: perspective(1200px) rotateY(45deg);
+}
+
+.wall-right {
+  right: 0%;
+  transform-origin: left center;
+  transform: perspective(1200px) rotateY(-45deg);
+}
+
+.wall-grid {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  place-items: center;
+}

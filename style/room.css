@@ -1,0 +1,23 @@
+
+.vline,
+.diag {
+  position: absolute;
+  background: var(--lines);
+}
+
+.vline {
+  top: 0;
+  bottom: 0;
+  width: 2px;
+}
+.diag {
+  height: 2px;
+}
+
+.v1 { left: 33.333%; }
+.v2 { left: 66.667%; }
+.d1 { top: 33.333%; width: 100%; }
+.d2 { top: 66.667%; width: 100%; }
+
+
+
