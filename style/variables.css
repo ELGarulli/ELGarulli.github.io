@@ -1,13 +1,13 @@
 
 body.theme-cool{
   --bg: #2D353D;
-  --box: #000000;
-  --text: #000000;
-  --accent: #000000;
+  --box: #28282B;
+  --text: #28282B;
+  --accent: #28282B;
   --lighter-room: #C3F763;
   --room: #0AF43F;
-  --lines: #000000;
-  --accent-soft: #000000;
+  --lines: #28282B;
+  --accent-soft: #28282B;
 }
 
 body.theme-boring{
@@ -23,12 +23,12 @@ body.theme-boring{
 
 
 body.theme-party{
-  --bg: #000000;
+  --bg: #2D353D;
   --box: #000000;
-  --text: #000000;
-  --accent: #000000;
+  --text: #f1f2ee;
+  --accent: #0AF43F;
   --lines: #0AF43F;
   --lighter-room: #C3F763;
   --room: #000000;
-  --accent-soft: #000000;
+  --accent-soft: #0AF43F;
 }

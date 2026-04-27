@@ -1,49 +1,67 @@
-.room{
+.room {
+  --back-left: 25vw;
+  --back-top: 25vh;
+  --back-width: 50vw;
+  --back-height: 50vh;
+  
   position: absolute;
-  width: 100vw;
-  height: 100vh;
-  perspective: 3600px;
-  overflow: hidden;
+  inset: 0;
+  perspective: 60vw;
+  perspective-origin: var(--px, 50%) 50%;
+  transform-style: preserve-3d;
+
 }
 
 .wall{
   position: absolute;
-  top: 10vh;
-  height: 72vh;
-  border-radius: 0px;
-  box-sizing: border-box;
-
+  border-radius: 0;
+  border-color: var(--accent);
 }
 
 .wall-center {
-  left: 25%;
-  width: 50%;
-  background: color-mix(in srgb, var(--room) 85%, black);
-  z-index: 1;
+  left: var(--back-left);
+  top: var(--back-top);
+  width: var(--back-width);
+  height: var(--back-height);
+  background: color-mix(in srgb, var(--room) 95%, black);
 }
 
-.wall-left,
-.wall-right {
-  width: 25%;
+.wall-left, .wall-right{
+  top: var(--back-top);
+  width: calc(var(--back-width)/1.7);
+  height: var(--back-height);
   background: var(--room);
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0rem;
-  padding: 0rem;
 }
 
 .wall-left {
-  left: 0%;
-  transform-origin: right center;
-  transform: perspective(1200px) rotateY(45deg);
+  left: var(--back-left);
+  transform-origin: left center;
+  transform: rotateY(-90deg);
 }
 
 .wall-right {
-  right: 0%;
+  left: calc(var(--back-left) + var(--back-width));
   transform-origin: left center;
-  transform: perspective(1200px) rotateY(-45deg);
+  transform: rotateY(-90deg);
+}
+
+.wall-floor, .wall-ceiling{
+  left: var(--back-left);
+  width: var(--back-width);
+  height: var(--back-height);
+  background: var(--room);
+}
+
+.wall-ceiling {
+  top: 25vh;
+  transform-origin: top center;
+  transform: rotateX(90deg);
+}
+
+.wall-floor {
+  top: 25vh;
+  transform-origin: bottom center;
+  transform: rotateX(-90deg);
 }
 
 .wall-grid {

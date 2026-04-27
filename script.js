@@ -34,3 +34,16 @@ radios.forEach(radio => {
 });
 
 setTheme(document.querySelector('input[name="theme"]:checked').value);
+
+
+const room = document.querySelector(".room");
+
+const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
+
+window.addEventListener("mousemove", e => {
+  const x = e.clientX / window.innerWidth;   // 0..1
+
+  const px = 50 + (x - 0.5) * 20; // range: 40%..60%
+
+  room.style.setProperty("--px", `${clamp(px, 47, 52)}%`);
+});
